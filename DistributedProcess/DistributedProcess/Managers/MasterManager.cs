@@ -46,6 +46,7 @@ namespace DistributedProcess.Managers
             catch (Exception ex)
             {
                 Console.WriteLine($"Error trying to get or renew leadership: {ex.Message}");
+                _isLeader = false;
             }
         }
     }
